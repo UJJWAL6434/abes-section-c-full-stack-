@@ -1,0 +1,79 @@
+<!-- page2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking - Payment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+    }
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar .title {
+      font-size: 24px;
+    }
+    .navbar .right {
+      font-size: 16px;
+    }
+
+    /* Container */
+    .container {
+      margin: 20px;
+    }
+    .btn {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">🚌 MyBus</div>
+    <div class="title">Welcome to Bus Booking System</div>
+    <div class="right">
+      <span>AC / Non-AC | Payment Options</span>
+    </div>
+  </div>
+
+  <!-- Payment Options -->
+  <div class="container">
+    <h2>Select Bus Type</h2>
+    <input type="radio" name="bus_type" value="ac"> AC
+    <input type="radio" name="bus_type" value="non-ac"> Non-AC
+
+    <h2>Payment Options</h2>
+    <input type="radio" name="payment" value="upi"> UPI  
+    <input type="radio" name="payment" value="card"> Card  
+    <input type="radio" name="payment" value="netbanking"> Net Banking  
+
+    <br><br>
+    <button class="btn">Confirm Booking</button>
+    <a href="page1.html" class="btn">Back</a>
+  </div>
+</body>
+</html>
+
