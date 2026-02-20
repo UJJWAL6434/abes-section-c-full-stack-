@@ -1,0 +1,138 @@
+
+     <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flipkart — Two Row Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --blue: #2874f0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body { margin: 0; background: #f5f6f8; }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 150px 1fr 200px;
+      align-items: center;
+      background: var(--blue);
+      padding: 12px 18px;
+      gap: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    }
+
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 28px; filter: brightness(0) invert(1); object-fit: contain; }
+
+    .search {
+      display: flex; align-items: center;
+      background: white;
+      border-radius: 4px;
+      overflow: hidden;
+      padding: 0 8px;
+    }
+    .search i { color: var(--blue); font-size: 16px; margin-right: 8px; }
+    .search input { border: 0; outline: none; font-size: 14px; padding: 10px; flex: 1 }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      background: white;
+      color: var(--blue);
+      border: 0;
+      padding: 8px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 14px 18px;
+      background: white;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .cat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .cat-item img {
+      height: 50px;
+      width: 50px;
+      object-fit: contain;
+      margin-bottom: 6px;
+    }
+
+    @media(max-width:640px){
+      .topbar { grid-template-columns: 1fr; gap: 12px; }
+      .actions { justify-content: center; }
+      .categories { gap: 20px; overflow: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">
+      <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="">
+    </div>
+
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" placeholder="Search for products, brands and more" />
+    </div>
+
+    <div class="actions">
+      <button class="btn">Login</button>
+
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="btn">
+          <img src="https://img.icons8.com/ios-filled/50/2874f0/shopping-cart.png" alt="cart"
+            style="height:18px;width:18px;filter:invert(27%) sepia(95%) saturate(3342%) hue-rotate(202deg) brightness(91%) contrast(91%)" />
+          Cart
+        </button>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: white;"></i>
+      </div>
+    </div>
+  </header>
+
+  <nav class="categories">
+    <div class="cat-item">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/5f2ee7f883cdb774.png?q=100" alt="Mobiles" />
+      Mobiles
+    </div>
+    <div class="cat-item">
+      <img src="https://img.icons8.com/color/96/t-shirt.png" alt="Fashion" />
+      Fashion
+    </div>
+    <div class="cat-item">
+      <img src="https://img.icons8.com/color/96/electronics.png" alt="Electronics" />
+      Electronics
+    </div>
+    <div class="cat-item">
+      <img src="https://rukminim2.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="Grocery" />
+      Grocery
+    </div>
+  </nav>
+
+</body>
+</html>

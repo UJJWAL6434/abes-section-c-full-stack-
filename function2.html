@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Example</title>
+    <style>
+        #adi {
+            border: 5px solid red;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="adi">
+        <button onclick="ad()">Click</button>
+        <p id="aaa"></p>
+    </div>
+
+    <script>
+        function ad() {
+            document.getElementById("aaa").innerHTML = "<h1>Hello</h1>";
+        }
+    </script>
+</body>
+</html>

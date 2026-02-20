@@ -1,0 +1,106 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+   
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+    }
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar .title {
+      font-size: 24px;
+    }
+
+    
+    .container {
+      margin: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+    td {
+      padding: 10px;
+    }
+    input, select {
+      padding: 5px;
+      width: 100%;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <div class="logo">🚌 MyBus</div>
+    <div class="title">Welcome to Bus Booking System</div>
+    <div></div>
+  </div>
+
+
+  <div class="container">
+    <form>
+      <table border="1">
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="username" required></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+          </td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td>
+            <select name="city">
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="lucknow">Lucknow</option>
+              <option value="Bangalore">Bangalore</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" class="btn">Seat Book</button>
+      <a href="asss2.html" class="btn">Go to Payment</a>
+    </form>
+  </div>
+</body>
+</html>
